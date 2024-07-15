@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentoEmpleado</title>
+    <link rel="stylesheet" href="../../css/talento_humano/empleado.css">
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="/menu/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" />
+</head>
+<body>
+    <header>
+    </header> 
+    <nav>
+      <!-- Inicio de menu -->
+  <div class="container">
+    <div class="sidebar">
+      <!--  ===================== Usuario ===================== -->
+      <div class="menu-btn">
+        <i class="ph-bold ph-caret-left"></i>
+      </div>
+      <div class="head">
+        <div class="usuario-img">
+          <img src="../../iconos/icon_user.png" alt="imagen-perfil" />
+        </div>
+        <div class="usuario-detalles">
+          <p class="titulo">Tipo de Usuario</p>
+          <p class="nombre">Usuario</p>
+        </div>
+      </div>
+      <!--  ================================================== -->
+      <div class="nav">
+        <div class="menu">
+          <p class="titulo">MAIN</p>
+          <ul>
+            <!--  ===================== Página de Inicio  ===================== -->
+            <li>
+              <a href="#" data-content="home">
+                <i class="icon ph-bold ph-house-simple"></i>
+                <span class="text">Inicio</span>
+              </a>
+            </li>
+            <!--  ===================== Talento Humano  ===================== -->
+            <li>
+              <a href="#" data-content="talento-humano">
+                <i class="icon ph-bold ph-user"></i>
+                <span class="text">Talento Humano</span>
+                <i class="arrow ph-bold ph-caret-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li><a href="../talento_humano/EmpleadoTabla.html"><span class="text">Empleado</span></a></li>
+                <li><a href="../talento_humano/ClienteTabla.html"><span class="text">Cliente</span></a></li>
+                <li><a href="../talento_humano/ContratoTabla.html"><span class="text">Contrato</span></a></li>
+                <li><a href="../talento_humano/NovedadesTabla.html"><span class="text">Novedades</span></a></li>
+                <li><a href="../talento_humano/empresaAporte.html"><span class="text">Empresa Aporte</span></a></li>
+              </ul>
+            </li>
+            <!--  ===================== Servicio Técnico  ===================== -->
+            <li>
+              <a href="#" data-content="servicio-tecnico">
+                <i class="icon ph-bold ph-wrench"></i>
+                <span class="text">Servicio Técnico</span>
+                <i class="arrow ph-bold ph-caret-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li><a href="../servicio_tecnico/agenda.html"><span class="text">Agenda</span></a></li>
+                <li><a href="../servicio_tecnico/AsignarTabla.html"><span class="text">Asignar</span></a></li>
+                <li><a href="../servicio_tecnico/novedadTabla.html"><span class="text">Novedades</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--  ===================== Menu Ajustes ===================== -->
+      <div class="menu">
+        <p class="titulo">Cuenta</p>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="icon ph-bold ph-gear"></i>
+              <span class="text">Ajustes</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon ph-bold ph-info"></i>
+              <span class="text">Ayuda</span>
+            </a>
+          </li>
+          <li>
+            <a href="/html/Cuenta/index.html"> <!--  ===================== Ajustes de perfil ===================== -->
+              <i class="icon ph-bold ph-pen"></i>
+              <span class="text">Editar Perfil</span>
+            </a>
+          </li>
+          <li>
+            <a href="../../login2/index.html">
+              <i class="icon ph-bold ph-sign-out"></i>
+              <span class="text">Salir</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <!-- Contenido principal aquí -->
+    </div>
+  </div>
+  <!-- Jquery -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+    integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="/menu/menu.js"></script>
+  <!-- fin del menu -->
+    </nav>  
+    <article>
+        <div class="titulo1"> 
+        <h1>Talento Humano</h1>
+        <h1> Empleado</h1>
+        </div>
+        <div class="logo">
+            <img src="/Logo GIT/Logo sin fondo.png" alt="">
+        </div>
+        <div class="fondo"></div>
+        <div class="registrar">
+            <div class="formulario">         
+            </div>
+            <label for="tipoDoc">Tipo de Documento</label>
+            <select id="tipoDoc" name="tipoDoc" required class="form-input">
+                <option value="--">--</option>
+                <option value="cedulaC">Cédula de Ciudadanía</option>
+                <option value="cedulaE">Cédula de Extrangería</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="permiso">Permiso de Trabajo</option>
+            </select>
+            <label for="documento">Documento</label>
+            <input
+                type="text"
+                id="documento"
+                name="documento"
+                required
+                class="form-input"
+            />
+            
+            <label for="nombre">Nombres</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                class="form-input"
+            />
+
+            <label for="apellidos">Apellidos</label>
+            <input
+                type="text"
+                id="apellidos"
+                name="apellidos"
+                required
+                class="form-input"
+            /> 
+            
+            <label for="numContacto">Número de Contacto</label>
+            <input
+                type="text"
+                id="numContacto"
+                name="numContacto"
+                required
+                class="form-input"
+            />
+
+            <label for="nomConEmer">Nombre Contacto Emergencia</label>
+            <input
+                type="text"
+                id="nomConEmer"
+                name="nomConEmer"
+                required
+                class="form-input"
+            />
+  
+            <label for="numConEmer">Número Contacto Emergencia</label>
+            <input
+                type="text"
+                id="numConEmer"
+                name="numConEmer"
+                required
+                class="form-input"
+            />
+  
+            <label for="parentesco">Parentesco</label>
+            <input
+                type="text"
+                id="parentesco"
+                name="parentesco"
+                required
+                min="1"
+                class="form-input"
+            />
+  
+            <label for="direccion">Dirección</label>
+            <input
+                type="text"
+                id="direccion"
+                name="direccion"
+                required
+                class="form-input"
+            />
+            <label for="correo">Correo</label>
+            <input
+                type="text"
+                id="correo"
+                name="correo"
+                required
+                class="form-input"
+            />
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado" required class="form-input">
+                <option value="--">--</option>
+                <option value="activo">Activo</option>
+                <option value="inactivo">Inactivo</option>
+            </select>
+            <label for="vinculacion">Vinculación</label>
+            <select id="vinculacion" name="vinculacion" required class="form-input">
+                <option value="--">--</option>
+                <option value="ops">OPS</option>
+                <option value="horas">Trabajo por Horas</option>
+                <option value="fijo">Contrato Fijo</option>
+            </select>
+            <label for="fechaNac">Fecha Nacimiento</label>
+            <input
+                type="text"
+                id="fechaNac"
+                name="fechaNac"
+                required
+                class="form-input"
+            />
+            <label for="contrasenia">Contraseña</label>
+            <input
+                type="text"
+                id="contrasenia"
+                name="contrasenia"
+                required
+                class="form-input"
+            />
+            <label for="especialidad">Especialidad</label>
+            <select id="especialidad" name="especialidad" required class="form-input">
+                <option value="--">--</option>
+                <option value="tecnico">Tecnico</option>
+                <option value="tecnologo">Tecnologo</option>
+                <option value="ingeniero">Ingeniero</option>
+                <option value="empirico">Empírico</option>
+            </select>
+            <label for="municipio">Municipio</label>
+            <input
+                type="text"
+                id="municipio"
+                name="municipio"
+                required
+                class="form-input"
+            />
+
+            <button type="submit" class="btn">Registrar</button>
+             <!-- Botón de Volver -->
+        <div class="volver">
+            <button type="button" class="btn" onclick="history.back()">Volver</button>
+        </div>
+        </div>
+    </article>
+    <footer>
+    </footer>    
+</body>
+</html>

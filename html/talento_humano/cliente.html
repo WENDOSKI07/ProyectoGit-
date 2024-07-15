@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentoCliente</title>
+    <link rel="stylesheet" href="../../css/talento_humano/cliente.css">
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="../../menu/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" />
+</head>
+<body>
+
+    <header>
+    </header>
+
+    <nav>
+       
+      <div class="container">
+        <div class="sidebar">
+          <!--  ===================== Usuario ===================== -->
+          <div class="menu-btn">
+            <i class="ph-bold ph-caret-left"></i>
+          </div>
+          <div class="head">
+            <div class="usuario-img">
+              <img src="../../iconos/icon_user.png" alt="imagen-perfil" />
+            </div>
+            <div class="usuario-detalles">
+              <p class="titulo">Tipo de Usuario</p>
+              <p class="nombre">Usuario</p>
+            </div>
+          </div>
+          <!--  ================================================== -->
+          <div class="nav">
+            <div class="menu">
+              <p class="titulo">MAIN</p>
+              <ul>
+                <!--  ===================== Página de Inicio  ===================== -->
+                <li>
+                  <a href="#" data-content="home">
+                    <i class="icon ph-bold ph-house-simple"></i>
+                    <span class="text">Inicio</span>
+                  </a>
+                </li>
+                <!--  ===================== Talento Humano  ===================== -->
+                <li>
+                  <a href="#" data-content="talento-humano">
+                    <i class="icon ph-bold ph-user"></i>
+                    <span class="text">Talento Humano</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li><a href="EmpleadoTabla.html"><span class="text">Empleado</span></a></li>
+                    <li><a href="ClienteTabla.html"><span class="text">Cliente</span></a></li>
+                    <li><a href="ContratoTabla.html"><span class="text">Contrato</span></a></li>
+                    <li><a href="NovedadesTabla.html"><span class="text">Novedades</span></a></li>
+                    <li><a href="empresaAporte.html"><span class="text">Empresa Aporte</span></a></li>
+                  </ul>
+                </li>
+                <!--  ===================== Servicio Técnico  ===================== -->
+                <li>
+                  <a href="#" data-content="servicio-tecnico">
+                    <i class="icon ph-bold ph-wrench"></i>
+                    <span class="text">Servicio Técnico</span>
+                    <i class="arrow ph-bold ph-caret-down"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li><a href="../servicio_tecnico/agenda.html"><span class="text">Agenda</span></a></li>
+                    <li><a href="../servicio_tecnico/AsignarTabla.html"><span class="text">Asignar</span></a></li>
+                    <li><a href="../servicio_tecnico/novedadTabla.html"><span class="text">Novedades</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--  ===================== Menu Ajustes ===================== -->
+          <div class="menu">
+            <p class="titulo">Cuenta</p>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="icon ph-bold ph-gear"></i>
+                  <span class="text">Ajustes</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon ph-bold ph-info"></i>
+                  <span class="text">Ayuda</span>
+                </a>
+              </li>
+              <li>
+                <a href="../Cuenta/index.html"> <!--  ===================== Ajustes de perfil ===================== -->
+                  <i class="icon ph-bold ph-pen"></i>
+                  <span class="text">Editar Perfil</span>
+                </a>
+              </li>
+              <li>
+                <a href="../../login2/index.html">
+                  <i class="icon ph-bold ph-sign-out"></i>
+                  <span class="text">Salir</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-content">
+          <!-- Contenido principal aquí -->
+        </div>
+      </div>
+      <!-- Jquery -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous"
+      ></script>
+      <script src="../../menu/menu.js"></script>
+    </nav>
+
+
+    <article>
+      <div class="titulo1"> 
+        <h1>Talento Humano</h1>
+        <h1>Cliente</h1>
+      </div>
+      <div class="logo">
+        <img src="/Logo GIT/Logo sin fondo.png" alt="">
+      </div>
+      <div class="fondo"></div>
+      
+      <div class="registrar">
+        <label for="mesaC">Nombre Mesa Cliente</label>
+        <input type="text" id="mesaC" name="mesaC" required class="form-input"/>
+        <label for="solicitante">Solicitante</label>
+        <input type="text" id="solicitante" name="solicitante" required class="form-input"/>
+        <label for="numContacto">Número de Contacto</label>
+        <input type="text" id="numContacto" name="numContacto" required class="form-input"/>
+        <label for="clienteFin">Cliente Final</label>
+        <input type="text" id="clienteFin" name="clienteFin" required class="form-input"/> 
+        <button type="submit" class="btn">Registrar</button> <!-- Botón de Registrar -->
+        <div class="volver"> <!-- Botón de Volver -->
+          <button type="button" class="btn" onclick="history.back()">Volver</button>
+        </div>
+      </div>  
+    </article>
+
+    <footer>
+    </footer>
+    
+</body>
+</html>

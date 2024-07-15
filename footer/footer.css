@@ -1,0 +1,13 @@
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 84.4%;
+}
+.pie{
+    color: black;
+    position: absolute;
+    left: 730px;
+}

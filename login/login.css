@@ -1,0 +1,166 @@
+@import url(../root/Styles.css);
+
+body {
+    background-image: url(../iconos/fondoLogin2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Contenedor del login */
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Caja del login */
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    backdrop-filter: blur(25px);
+    border: 2px solid var(--color-found-secundary);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+}
+
+/* Cabecera del login */
+.login-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-found-secundary);
+    width: 230px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Texto de la cabecera */
+.login-header span {
+    font-size: 30px;
+    color: var(--color-letra-black);
+}
+
+/* Caja de entrada */
+.input-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+/* Campo de entrada */
+.input-field,
+#tipoDocumento {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    background-color: var(--color-found-secundary);
+    color: var(--color-found-black);
+    padding: 0 50px 0 20px;
+    border: 2px solid var(--color-found-black);
+    border-radius: 15px;
+    outline: none;
+    opacity: 50%;
+}
+
+/* Label */
+.label,
+#label_tipoDocumento {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: .2s;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: var(--color-letra-black);
+}
+
+.input-field:focus ~ .label,
+.input-field:not(:placeholder-shown) ~ .label,
+#tipoDocumento:focus ~ #label_tipoDocumento,
+#tipoDocumento:not([value=""]) ~ #label_tipoDocumento {
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    /* background-color: var(--color-found-secundary); */
+    border-radius: 30px;
+    color: var(--color-letra-black);
+}
+
+/* Icono */
+.icon {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+}
+
+/* Iconos específicos */
+#icon_user,
+#icon_password {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+/* Enlace para recuperar contraseña */
+.recuperar {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+/* Botón de enviar */
+.input-submit {
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-found-secundary);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-submit:hover {
+    background-color: var(--color-found-primary);
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 564px) {
+    .login-box {
+        padding: 7.5em 1.5em 4em 1.5em;
+    }
+}
+
+/* Estilo para el label del tipo de documento */
+#label_tipoDocumento {
+    top: 0;
+    left: 20px;
+    margin-bottom: 0;
+}
+
+/* Estilo para las opciones del select */
+#tipoDocumento option {
+    padding: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}

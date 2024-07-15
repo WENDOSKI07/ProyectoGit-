@@ -1,0 +1,196 @@
+@import url(../../root/Styles.css);
+@import "/menu/menu.html";
+@import "/menu/menu.js";
+@import "/menu/menu.css";
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    z-index: 2;
+    margin-top: -620px;
+    margin-left: 200px;
+  
+}
+
+.navegacion button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navegacion span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#calendario {
+    width: 90%;
+    max-width: 1200px;
+    position: relative; /* Necesario para usar z-index */
+    z-index: 2;
+}
+
+table {
+  margin-top: 80px;
+  margin-left: 520px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* dimensiones del header, nav, article y footer */
+
+/*header {
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  background-color: var(--color-found-secundary);
+  height: 50px;
+  width: 83.9%;
+}
+nav{
+  background-color: var(--color-found-secundary);
+}
+
+article {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  background-color: var(--color-found-secundary);
+  height: 94.7%;
+  width: 82.9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: var(--color-found-secundary);
+  height: 60px;
+  width: 85.9%;
+}
+
+/* este es el logo */
+.logo {
+  position: absolute;
+  width: 100px;
+  margin-left: 950px;
+  margin-top:  -400px;
+  z-index: 1;
+}
+
+/* este es el fondo del logo */
+.fondo {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-color: rgb(66, 108, 187);
+  border-radius: 50%;
+  margin-top: -500px;
+  margin-left: 830px;
+  opacity: 15%;
+  z-index: 0;
+}
+.titulo1{
+  width: 80%;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  left: 290px;
+}
+@media screen and (max-width: 952px) {
+        
+  .titulo1{
+    font-size: 14px;
+    margin-left: -150px;
+
+  }  
+  .navegacion {
+    width: 50%;
+    height: auto;
+    margin-left: 150px;
+    margin-top: -830px;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+    margin-left:  200px;
+    margin-top: -320px;
+    transform: translateX(-50%);
+  }
+  .fondo{
+    width: 50%;
+    height: 50%;
+    margin-left:  190px;
+    transform: translateX(-10%);
+    margin-top: -370px;
+  }
+  table{
+    width: 60%;    
+    margin-left: 120px;
+    margin-top: 150px;
+  }
+  .navegacion span{
+    font-size: 17px;
+  }
+
+  
+}
+@media screen and (max-width: 720px) {
+   
+
+.titulo1{
+  font-size: 10px;
+  margin-left: -150px;
+}  
+.navegacion{
+  width: 40%;
+  height: auto;
+  margin-left: 150px;
+  margin-top: -830px;
+
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  margin-left:  150px;
+  transform: translateX(-20%);
+  margin-top: -320px;
+
+}
+.fondo{
+  width: 50%;
+  height: 50%;
+  margin-left: 180px;
+  margin-top: -370px;
+}
+table{
+  width: 20%;
+  margin-left: 100px;
+  margin-top: 150px;
+}
+.navegacion span{
+  font-size: 14px;
+}
+}

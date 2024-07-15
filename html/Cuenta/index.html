@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="../../../css/Cuenta/editar-perfil/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-5 py-5">
+        <h4 class="font-weight-bold mb-4">Configurar Perfil</h4>
+        <div class="card shadow-sm">
+            <div class="row g-0">
+                <div class="col-md-3 bg-light">
+                    <div class="list-group list-group-flush account-settings-links">
+                        <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#account-general">General</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#account-change-password">Cambiar Contraseña</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#account-info">Info</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#account-social-links">Links Redes Sociales</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#account-connections">Conexiones</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#account-notifications">Notificaciones</a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content">
+                        <!-- General Tab -->
+                        <div class="tab-pane fade show active" id="account-general">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Avatar" class="rounded-circle ui-w-80">
+                                    <div class="ms-3">
+                                        <label class="btn btn-outline-primary">
+                                            Nueva Foto
+                                            <input type="file" class="account-settings-fileinput">
+                                        </label>
+                                        <button type="button" class="btn btn-outline-secondary ms-2">Resetear</button>
+                                        <div class="text-muted small mt-1">Permitido JPG, GIF o PNG. Tamaño máximo de 800K.</div>
+                                    </div>
+                                </div>
+                                <hr class="border-light mb-4">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label">Usuario</label>
+                                        <input type="text" class="form-control" id="username" value="nmaxwell" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="fullname" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="fullname" value="Nelle Maxwell" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="email" value="nmaxwell@mail.com" />
+                                        <div class="alert alert-warning mt-2">
+                                            Su email no ha sido confirmado. Por favor revisa tus mensajes.<br>
+                                            <a href="javascript:void(0)">Reenviar notificación</a>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="company" class="form-label">Compañía</label>
+                                        <input type="text" class="form-control" id="company" value="Company Ltd." />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Change Password Tab -->
+                        <div class="tab-pane fade" id="account-change-password">
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="current-password" class="form-label">Contraseña Actual</label>
+                                        <input type="password" class="form-control" id="current-password" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="new-password" class="form-label">Nueva Contraseña</label>
+                                        <input type="password" class="form-control" id="new-password" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="repeat-new-password" class="form-label">Repetir Nueva Contraseña</label>
+                                        <input type="password" class="form-control" id="repeat-new-password" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Cambiar Contraseña</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Info Tab -->
+                        <div class="tab-pane fade" id="account-info">
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="biography" class="form-label">Biografía</label>
+                                        <textarea class="form-control" id="biography" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc arcu, dignissim sit amet sollicitudin iaculis, vehicula id urna. Sed luctus urna nunc. Donec fermentum, magna sit amet rutrum pretium, turpis dolor molestie diam, ut lacinia diam risus eleifend sapien. Curabitur ac nibh nulla. Maecenas nec augue placerat, viverra tellus non, pulvinar risus.</textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="birthday" class="form-label">Cumpleaños</label>
+                                        <input type="text" class="form-control" id="birthday" value="May 3, 1995" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="country" class="form-label">País</label>
+                                        <select id="country" class="form-select">
+                                            <option>Venezuela</option>
+                                            <option selected>Colombia</option>
+                                            <option>UK</option>
+                                            <option>Alemania</option>
+                                            <option>Francia</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="city" class="form-label">Ciudad</label>
+                                        <select id="city" class="form-select">
+                                            <option>Sogamoso</option>
+                                            <option selected>Tunja</option>
+                                            <option>Duitama</option>
+                                            <option>Paipa</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Teléfono</label>
+                                        <input type="text" class="form-control" id="phone" value="+0 (123) 456 7891" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="website" class="form-label">Website</label>
+                                        <input type="text" class="form-control" id="website" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Actualizar Información</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Social Links Tab -->
+                        <div class="tab-pane fade" id="account-social-links">
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="twitter" class="form-label">Twitter</label>
+                                        <input type="text" class="form-control" id="twitter" value="https://twitter.com/user" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="facebook" class="form-label">Facebook</label>
+                                        <input type="text" class="form-control" id="facebook" value="https://www.facebook.com/user" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="googleplus" class="form-label">Google+</label>
+                                        <input type="text" class="form-control" id="googleplus" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="linkedin" class="form-label">LinkedIn</label>
+                                        <input type="text" class="form-control" id="linkedin" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="instagram" class="form-label">Instagram</label>
+                                        <input type="text" class="form-control" id="instagram" value="https://www.instagram.com/user" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Guardar Links</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Connections Tab -->
+                        <div class="tab-pane fade" id="account-connections">
+                            <div class="card-body">
+                                <div class="d-flex flex-column gap-3">
+                                    <button type="button" class="btn btn-twitter">Conectado a <strong>Twitter</strong></button>
+                                    <button type="button" class="btn btn-google">Conectado a <strong>Google</strong></button>
+                                    <button type="button" class="btn btn-facebook">Conectado a <strong>Facebook</strong></button>
+                                    <button type="button" class="btn btn-instagram">Conectado a <strong>Instagram</strong></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Notifications Tab -->
+                        <div class="tab-pane fade" id="account-notifications">
+                            <div class="card-body">
+                                <h6 class="mb-4">Actividad</h6>
+                                <form>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="notify-activity" checked />
+                                        <label class="form-check-label" for="notify-activity">Notificarme cuando ...</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="notify-notifications" checked />
+                                        <label class="form-check-label" for="notify-notifications">Notificaciones</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="notify-other" />
+                                        <label class="form-check-label" for="notify-other">Otros</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Guardar Notificaciones</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end mt-4">
+            <a href="../../menu/menu.html" class="btn btn-secondary">Volver al Menú Principal</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

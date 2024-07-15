@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Novedades Tabla</title>
+    <link rel="stylesheet" href="/css/servicio_tecnico/NovedadTabla.css">
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="../../menu/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" />
+</head>
+<body>
+    
+    <header>
+    </header>
+    <nav>
+        <div class="container">
+          <div class="sidebar">
+            <!--  ===================== Usuario ===================== -->
+            <div class="menu-btn">
+              <i class="ph-bold ph-caret-left"></i>
+            </div>
+            <div class="head">
+              <div class="usuario-img">
+                <img src="../../iconos/icon_user.png" alt="imagen-perfil" />
+              </div>
+              <div class="usuario-detalles">
+                <p class="titulo">Tipo de Usuario</p>
+                <p class="nombre">Usuario</p>
+              </div>
+            </div>
+            <!--  ================================================== -->
+            <div class="nav">
+              <div class="menu">
+                <p class="titulo">MAIN</p>
+                <ul>
+                  <!--  ===================== Página de Inicio  ===================== -->
+                  <li>
+                    <a href="#" data-content="home">
+                      <i class="icon ph-bold ph-house-simple"></i>
+                      <span class="text">Inicio</span>
+                    </a>
+                  </li>
+                  <!--  ===================== Talento Humano  ===================== -->
+                  <li>
+                    <a href="#" data-content="talento-humano">
+                      <i class="icon ph-bold ph-user"></i>
+                      <span class="text">Talento Humano</span>
+                      <i class="arrow ph-bold ph-caret-down"></i>
+                    </a>
+                    <ul class="sub-menu">
+                      <li><a href="../talento_humano/EmpleadoTabla.html"><span class="text">Empleado</span></a></li>
+                      <li><a href="../talento_humano/ClienteTabla.html"><span class="text">Cliente</span></a></li>
+                      <li><a href="../talento_humano/ContratoTabla.html"><span class="text">Contrato</span></a></li>
+                      <li><a href="../talento_humano/NovedadesTabla.html"><span class="text">Novedades</span></a></li>
+                      <li><a href="../talento_humano/empresaAporte.html"><span class="text">Empresa Aporte</span></a></li>
+                    </ul>
+                  </li>
+                  <!--  ===================== Servicio Técnico  ===================== -->
+                  <li>
+                    <a href="#" data-content="servicio-tecnico">
+                      <i class="icon ph-bold ph-wrench"></i>
+                      <span class="text">Servicio Técnico</span>
+                      <i class="arrow ph-bold ph-caret-down"></i>
+                    </a>
+                    <ul class="sub-menu">
+                      <li><a href="agenda.html"><span class="text">Agenda</span></a></li>
+                      <li><a href="AsignarTabla.html"><span class="text">Asignar</span></a></li>
+                      <li><a href="novedadTabla.html"><span class="text">Novedades</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--  ===================== Menu Ajustes ===================== -->
+            <div class="menu">
+              <p class="titulo">Cuenta</p>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="icon ph-bold ph-gear"></i>
+                    <span class="text">Ajustes</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon ph-bold ph-info"></i>
+                    <span class="text">Ayuda</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../Cuenta/index.html"> <!--  ===================== Ajustes de perfil ===================== -->
+                    <i class="icon ph-bold ph-pen"></i>
+                    <span class="text">Editar Perfil</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="../../login2/index.html">
+                    <i class="icon ph-bold ph-sign-out"></i>
+                    <span class="text">Salir</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-content">
+            <!-- Contenido principal aquí -->
+          </div>
+        </div>
+        <!-- Jquery -->
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+          integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+          crossorigin="anonymous"
+        ></script>
+        <script src="../../menu/menu.js"></script>
+      </nav>
+    <article>
+        <div class="titulo1">
+            <h1>Soporte Tecnico</h1>
+            <h1>Novedades</h1>
+          </div>
+          <div class="logo">
+            <img src="/Logo GIT/Logo sin fondo.png" alt="">
+        </div>
+        <div class="fondo"></div>
+        <div class="adicionar">
+            <img src="/iconos/adicionar.svg" alt="">
+                   <!-- Icono envuelto en un enlace -->
+                   <a href="NovedadRegistro.html">
+                    <img src="/iconos/adicionar.svg" alt="">
+            </a>
+        </div>
+        <div class="buscar">
+            <img src="/iconos/buscar.svg" alt="">
+        </div>
+      
+        <table class="tabla-soporte">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Observación</th>
+                    <th>Descripción</th>
+                    <th>Fecha</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Daño en la memoria ram y procesador del equipo</td>
+                    <td>Reparación de equipo</td>
+                    <td>2024-07-05</td>
+                    <td>     
+                      <button class="editar-button">✏️</button>
+                      <button class="ver-button">👁️</button>
+                      <button class="pdf-button">📄</button></td>
+                </tr>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+    <footer>
+        <div class="textoGenerar">
+            <h2>Generar reporte</h2>
+        </div>
+        
+        <div class ="reporte">
+            <img src="/iconos/reporte.svg" alt="">
+        </div>
+    </footer>
+</body>
+</html>
